@@ -4,14 +4,11 @@ import Money from '@/views/Money.vue';
 import Statistics from '@/views/Statistics.vue';
 import Labels from '@/views/Labels.vue';
 import NotFound from '@/views/NotFound.vue';
+import EditLabel from '@/views/EditLabel.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path:'*',
-    component: NotFound
-  },
   {
     path: '/',
     redirect: '/money'
@@ -28,6 +25,15 @@ const routes = [
     path:'/statistics',
     component: Statistics
   },
+
+  {
+    path:'/labels/edit/:id',
+    component: EditLabel
+  },
+  {
+    path:'*',
+    component: NotFound
+  }
 ];
 
 const router = new VueRouter({
