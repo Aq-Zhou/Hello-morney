@@ -19,7 +19,6 @@ import {Component} from 'vue-property-decorator';
 import store from '@/store/index2';
 
 
-
 @Component({
   components: {FormItem, Tags, Types, NumberPad}
 })
